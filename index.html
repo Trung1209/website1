@@ -245,9 +245,12 @@
     </script>
 
     <script>
+      
+        alert("first website");
+        confirm('confirm you are of age') //hien cung thong bao
         const buyBtns = document.querySelectorAll('.js-buy-ticket')
         const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelectorAll('.js-modal-container')
+        const modalContainer = document.querySelector('.js-modal-container')
         const modalClose = document.querySelector('.js-modal-close')
      
         // ham hien thi mua ve
@@ -268,11 +271,11 @@
         modalClose.addEventListener('click',hideBuytickets)
 
         modal.addEventListener('click',hideBuytickets)
-
+        //noi bot bat ke kic all deu an
         modalContainer.addEventListener('click',function (event) {
             event.stopPropagation()
         })
-           
+       
         
     </script>
 </body>
